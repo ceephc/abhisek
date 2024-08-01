@@ -1,0 +1,30 @@
+.slidable-video_container {
+  width: 100%;
+  padding: 0px 8px;
+}
+
+.slidable-video_container .heading {
+  padding: 0px 20px;
+  flex-basis: 100%;
+}
+.slidable-video_container::-webkit-scrollbar {
+  width: 40px;
+}
+.slidable-video_container::-webkit-scrollbar-track {
+  background: white;
+}
+.slidable-video_container::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+/* Swiper js button  */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  padding: 20px;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: pointer !important;
+  pointer-events: initial !important;
+}

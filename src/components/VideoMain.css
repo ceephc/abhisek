@@ -1,0 +1,23 @@
+.main-videos_section {
+  padding: var(--base-padding);
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 500;
+  color: #a6a6a6;
+  margin-bottom: 24px;
+}
+
+.main-videos_container {
+  display: grid;
+  gap: 24px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (max-width: 800px) {
+  .heading {
+    margin-bottom: 12px;
+  }
+}

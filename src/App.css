@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+:root {
+  --background: #000;
+
+  --base-padding: 20px;
+  /* hsl(0deg 0% 31.76%) */
+}
+body {
+  background-color: var(--background);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: white;
+}
+a {
+  color: white;
+}

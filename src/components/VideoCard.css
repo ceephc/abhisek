@@ -1,0 +1,70 @@
+.video-card {
+  --card-width: 600px;
+  --card-height: 250px;
+  position: relative;
+
+  height: var(--card-height);
+  cursor: pointer;
+  /* min-width: 400px; */
+
+  /* max-width: 430px; */
+}
+
+.video-card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 1;
+  transform: 0.5s all;
+}
+.video-card:hover:after {
+  opacity: 0.1;
+}
+.video-card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  user-select: none;
+  object-fit: cover;
+}
+.video-card.slidable-card {
+  height: var(--card-height);
+  min-width: var(--card-width);
+}
+
+.video-card.slidable-card p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.video-card.slidable-card h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.video-data {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  z-index: 2;
+}
+.video-data p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.video-data span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .video-card img {
+    object-fit: none;
+  }
+}
